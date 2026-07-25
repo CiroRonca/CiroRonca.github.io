@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Ciro Ronca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="https://ui-avatars.com/api/?name=CR&background=123829&color=C9A24B&bold=true&length=2&font-size=0.5" type="image/png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <header>
+        <a href="index.html" class="brand">cr<span class="blink">_</span></a>
+        <nav>
+            <a href="index.html#profile">profile</a>
+            <a href="index.html#education">education</a>
+            <a href="index.html#skills">skills</a>
+            <a href="projects.html" class="active">projects</a>
+            <a href="about.html">about</a>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-hero">
+        <h1 class="page-title"><span>Projects</span></h1>
+        <p class="page-subtitle">A selection of the projects I've worked on, split between personal initiatives and university coursework.</p>
+    </section>
+
+    <!-- PERSONAL PROJECTS -->
+    <section class="section reveal">
+        <p class="section-label"><span class="section-index">01</span> built on my own</p>
+        <h2 class="section-title">Personal Projects</h2>
+
+        <div class="deck">
+            <article class="card-project">
+                <span class="card-index">01</span>
+                <h3>CiroRonca.github.io</h3>
+                <p>My personal portfolio website — the very site you're looking at right now. Designed and coded from scratch to introduce myself, present my academic path and skills, and showcase the projects I've worked on.</p>
+                <div class="card-stack">
+                    <span class="stack-chip">HTML</span>
+                    <span class="stack-chip">CSS</span>
+                    <span class="stack-chip">JavaScript</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/CiroRonca.github.io" target="_blank">↗ github</a>
+                </div>
+            </article>
+
+            <article class="card-project">
+                <span class="card-index">02</span>
+                <h3>Biblioteca Comunale Salerno</h3>
+                <p>A redesign proposal for the Salerno Municipal Library's website. I reviewed the existing site and put together an improved layout and navigation concept, aimed at making the library's services and catalogue easier to browse for visitors.</p>
+                <div class="card-stack">
+                    <span class="stack-chip">HTML</span>
+                    <span class="stack-chip">CSS</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/Biblioteca-Comunale-Salerno" target="_blank">↗ github</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- UNIVERSITY PROJECTS -->
+    <section class="section reveal">
+        <p class="section-label"><span class="section-index">02</span> coursework &amp; thesis</p>
+        <h2 class="section-title">University Projects</h2>
+
+        <div class="deck">
+            <article class="card-project">
+                <span class="card-index">01</span>
+                <h3>Surgical Robot Simulator</h3>
+                <p>Interactive 3D simulation of an operating room with an articulated surgical robotic arm inspired by the Da Vinci system. Built a custom forward/inverse kinematics engine (CCD), real-time collision detection, and a fully scripted animated doctor character — no imported animation clips, all hand-coded in Three.js. Team project for Interactive Graphics.</p>
+                <div class="card-stack">
+                    <span class="stack-chip">JavaScript</span>
+                    <span class="stack-chip">Three.js</span>
+                    <span class="stack-chip">WebGL</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/surgical-robot-simulator" target="_blank">↗ github</a>
+                    <a href="https://sapienzainteractivegraphicscourse.github.io/final-project-ig_final_project/" target="_blank">↗ demo</a>
+                </div>
+            </article>
+
+            <article class="card-project">
+                <span class="card-index">02</span>
+                <h3>Bachelor's Thesis Project</h3>
+                <p>A Web API built with ASP.NET Core during my internship at ACK: users upload a photo and receive a detailed AI-generated description. Chains three APIs — Azure Computer Vision for the base caption, Clarifai for object and color recognition, and Groq to synthesize everything into a rich, coherent Italian description — plus a lightweight UI and upload history stored in a database.</p>
+                <div class="card-stack">
+                    <span class="stack-chip">C#</span>
+                    <span class="stack-chip">ASP.NET Core</span>
+                    <span class="stack-chip">Azure Vision</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/Bachelor-s-thesis-project" target="_blank">↗ github</a>
+                </div>
+            </article>
+
+            <article class="card-project">
+                <span class="card-index">03</span>
+                <h3>Computer Vision Project</h3>
+                <p>A Latent Diffusion Model in PyTorch that generates synthetic dental radiograph patches, conditioned on anatomical annotations (bounding boxes and keypoints) to augment a severely underrepresented periodontal disease class. Compares an unconditioned baseline against the anatomically-guided model through an ablation study and a downstream classification task. Team project for Computer Vision (Prof. Irene Amerini).</p>
+                <div class="card-stack">
+                    <span class="stack-chip">Python</span>
+                    <span class="stack-chip">PyTorch</span>
+                    <span class="stack-chip">Diffusion Models</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/Computer_Vision_Project" target="_blank">↗ github</a>
+                </div>
+            </article>
+
+            <article class="card-project">
+                <span class="card-index">04</span>
+                <h3>Image Classification</h3>
+                <p>CNN-based perception pipeline for a humanoid soccer robot: classification of what's in view (ball, goalpost, robot...) and regression of where it is in the frame, trained on 8,000+ match images from the SPQRL dataset. Includes a full hyperparameter tuning study across learning rate, batch size, and epochs, plus corrupted-file handling for a robust training pipeline.</p>
+                <div class="card-stack">
+                    <span class="stack-chip">Python</span>
+                    <span class="stack-chip">CNN</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/Image-Classification" target="_blank">↗ github</a>
+                </div>
+            </article>
+
+            <article class="card-project">
+                <span class="card-index">05</span>
+                <h3>Robot Control</h3>
+                <p>Learns the joint-space control function of a robotic arm without a physical model, approximating inverse kinematics with a Bagging Regressor ensemble of decision trees. Tested and hyperparameter-tuned across three arms of increasing complexity (3, 4, and 6 degrees of freedom), analyzing overfitting and shrinkage-to-the-mean as dimensionality grows.</p>
+                <div class="card-stack">
+                    <span class="stack-chip">Python</span>
+                    <span class="stack-chip">scikit-learn</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/CiroRonca/Robot_Control" target="_blank">↗ github</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CV DOWNLOAD STRIP -->
+    <div class="cv-strip reveal">
+        <div class="cv-strip-text">
+            <h3>Download my CV</h3>
+            <p>Curriculum completo con progetti, competenze e contatti.</p>
+        </div>
+        <a href="../../ITA_ENG_CURRICULUM_RONCA_CIRO.pdf" target="_blank" class="btn-primary" style="white-space:nowrap; flex-shrink:0;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+        </a>
+    </div>
+
+    <!-- FOOTER (loaded from footer.js — works on file:// too) -->
+    <div id="footer-placeholder"></div>
+    <script src="/js/footer.js"></script>
+
+    <script>
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
